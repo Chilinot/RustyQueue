@@ -23,6 +23,10 @@ impl<T> RustyQueue<T> {
             Err("The queue is empty!")
         }
     }
+
+    pub fn is_empty(&self) -> bool {
+        self.queue.is_empty()
+    }
 }
 
 #[cfg(test)]
